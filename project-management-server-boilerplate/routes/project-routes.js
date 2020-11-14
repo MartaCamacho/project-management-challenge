@@ -18,7 +18,6 @@ Project.find().populate('tasks')
 
 // POST route => to create a new project
 router.post("/projects",  (req, res, next) => {
-    // utilizamos el método create de mongoose y pasamos los parámetros del body para crear nuestro nuevo 'project' y guardarlo en BDD.
     const { title, description } = req.body;
     Project.create({
         title,

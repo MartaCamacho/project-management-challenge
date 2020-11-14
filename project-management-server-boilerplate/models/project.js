@@ -5,7 +5,7 @@ const projectSchema = new Schema(
     {
         title: String,
         description: String,
-        task: [ {type: Schema.Types.ObjectId, ref: "Task"} ],
+        tasks: [ {type: Schema.Types.ObjectId, ref: "Task"} ],
       },
       {
         timestamps: true,
